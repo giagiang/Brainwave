@@ -40,7 +40,7 @@ const Services = () => {
                     key={index}
                     className="flex items-start py-4 border-t border-n-6"
                   >
-                    <img src={check} width={24} height={24} />
+                    <img src={check} width={24} height={24}/>
                     <p className="ml-4">{item}</p>
                   </li>
                 ))}
@@ -49,26 +49,29 @@ const Services = () => {
 
             <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
           </div>
-          <div className="relative gap-5 z-1 gird lg: gird-cols-2">
+          
+          <div className="relative grid gap-5 z-1 lg:grid-cols-2">
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
-              <div className-="absolute inset-0">
+              <div className="absolute inset-0">
                 <img
-                  src={service2}
+                 src={service2}
                   className="object-cover w-full h-full"
                   width={630}
                   height={750}
                   alt="robot"
                 />
               </div>
+              
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="mb-4 h4">Photo editing</h4>
-                <p className=" body-2 mb-[3rem] text-n-3">
+                <p className="body-2 mb-[3rem] text-n-3">
                   Automatically enhance your photos using our AI app&apos;s
                   photo editing feature. Try it now!
                 </p>
               </div>
               <PhotoChatMessage />
             </div>
+            
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="px-4 py-12 xl:px-8">
                 <h4 className="mb-4 h4">Video generation</h4>
@@ -87,7 +90,7 @@ const Services = () => {
                           : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
                       }`}
                     >
-                      <div
+                      <div  
                         className={
                           index === 2
                             ? "flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]"
