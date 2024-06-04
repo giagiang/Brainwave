@@ -27,15 +27,19 @@ const Pricing = () => {
           </div>
         </div>
 
-
-        <Heading 
-            tag ="Get Started with Brainwave."
-            title = "Pay once, use forever"
+        <Heading
+          tag="Get Started with Brainwave."
+          title="Pay once, use forever"
         />
         <div className="relative">
-            <PricingList/>
-            <LeftLine/>
-            <RightLine/>
+          <PricingList />
+          <LeftLine />
+          <RightLine />
+        </div>
+        <div className="flex justify-center mt-10">
+          <a className="text-xs font-bold tracking-wider uppercase border-b font-code" href = "./pricing">
+            See the full Detail
+          </a>
         </div>
       </div>
     </Section>
